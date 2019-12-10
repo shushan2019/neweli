@@ -22,7 +22,7 @@ def banner():
 {re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
 
             version : 1.0
-        youtube.com/theunknon
+        Pro By Eli Shushan / Unknow
         """)
 
 cpass = configparser.RawConfigParser()
@@ -113,7 +113,7 @@ for user in users:
 	            sys.exit(re+"[!] Invalid Mode Selected. Please Try Again.")
 	        client(InviteToChannelRequest(target_group_entity,[user_to_add]))
 	        print(gr+"[+] Waiting for 10 Seconds...")
-	        time.sleep(random.randrange(10,20 ))
+	        time.sleep(random.randrange(5,10 ))
 	    except PeerFloodError:
 	        print(re+"[!] Getting Flood Error from telegram. \n[!] Script is stopping now. \n[!] Please try again after some time.")
 	    except UserPrivacyRestrictedError:
